@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <title>Social Links Profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: "Inter", sans-serif;
+        }
+
+        body {
+            background-color: hsl(0, 0%, 8%);
+            display: grid;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        main {
+            margin: auto 0;
+        }
+
+        main .container {
+            background-color: hsl(0, 0%, 12%);
+            text-align: center;
+            padding: 30px 20px;
+            border-radius: 10px;
+            width: 350px;
+        }
+
+        .container .image-container img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50px;
+            user-select: none;
+        }
+
+        .container .name {
+            color: hsl(0, 0%, 100%);
+            padding-top: 25px;
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        .container .location {
+            color: hsl(75, 94%, 57%);
+            font-weight: 600;
+            font-size: 12px;
+            padding-top: 10px;
+        }
+
+        .container .description {
+            font-size: 12px;
+            color: hsl(0, 0%, 80%);
+            padding-top: 25px;
+        }
+
+        .container .socials {
+            display: grid;
+            gap: 15px;
+            padding-top: 20px;
+        }
+
+        .socials button {
+            width: 260px;
+            padding: 12px 5px;
+            border-radius: 6px;
+            border: none;
+            background-color: hsl(0, 0%, 20%);
+            color: hsl(0, 0%, 100%);
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 500ms ease-in-out;
+        
+            -webkit-transition: background-color 500ms ease-in-out;
+            -ms-transition: background-color 500ms ease-in-out;
+
+            &:hover {
+                background-color: hsl(75, 94%, 57%);
+                color: hsl(0, 0%, 12%);
+            }
+        }
+
+        @media (width: 375px) {
+            body {
+                max-width: 375px;
+            }
+
+            main .container {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="image-container">
+                <img src="assets/avatar-jessica.jpeg" alt="">
+            </div>
+            <h3 class="name">Jessica Randall</h3>
+            <p class="location">London, United Kingdom</p>
+            <p class="description">"Front-end developer and avid reader."</p>
+            <div class="socials">
+                <a href="">
+                    <button>GitHub</button>
+                </a>
+
+                <a href="">
+                    <button>Frontend Mentor</button>
+                </a>
+
+                <a href="">
+                    <button>LinkedIn</button>
+                </a>
+
+                <a href="">
+                    <button>Twitter</button>
+                </a>
+
+                <a href="">
+                    <button>Instagram</button>
+                </a>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
